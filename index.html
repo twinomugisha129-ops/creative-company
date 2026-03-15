@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spark Company Agency</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        html { scroll-behavior: smooth; scroll-padding-top: 70px; }
+        body { position: relative; }
+        section { padding: 80px 0; }
+        .hero { height: 100vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(IMAGE\ 5.jpg); background-size: cover; color: white; display: flex; align-items: center; justify-content: center; text-align: center; }
+        .navbar { transition: 0.3s; }
+        .service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px); /* Moves the card up */
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.175) !important; /* Makes the shadow deeper */
+    cursor: pointer;
+}
+* Team Image Styling - Fixed Size */
+        .team-img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border: 5px solid #f8f9fa;
+            transition: all 0.3s ease;
+        }
+        .team-member:hover .team-img {
+            transform: scale(1.05);
+            border-color: var(--primary-color);
+        }
+
+/
+    </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#main-nav" data-bs-offset="71">
+
+    <nav id="main-nav" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home"><img src="logo.svg" alt="Logo" height="100"> Creative Spark</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--home-->
+
+    <section id="home" class="hero">
+        <div>
+            <h1 class="text-white text-size:100px;">Creative Spark Agency</h1>
+            <p class="lead">Igniting your brand's potential through digital excellence.</p>
+            <a href="#portfolio" class="btn btn-primary btn-lg mt-3">View Our Work</a>
+            <a href="#contact" class="btn btn-primary btn-lg mt-3">info</a>
+        </div>
+    </section>
+    <!--about-->
+
+    <section id="about" class="container">
+        <h2 class="text-center text-uppercase mb-5">About Us</h2>
+        <div class="row">
+            <div class=" col-md-6"><h3 class="fw-bold text-center">Our Story</h3><p class="lead text-muted mx-auto" style="max-width: 700px;">Founded on innovation, we bring visions to life.</p></div>
+            <div class=" col-md-6 "><h3 class="fw-bold text-center">Vision</h3><p class="lead text-muted mx-auto" style="max-width: 700px;">To lead the digital frontier with creativity and integrity.</p></div>
+             </div>
+            <div class="container text-center py-5">
+    <h2 class="fw-bold text-uppercase mb-4">Our Mission</h2>
+    
+    <p class="lead text-muted mx-auto" style="max-width: 700px;">
+        We believe in pushing the boundaries of digital creativity to help 
+        brands ignite their full potential in an ever-evolving world.
+    </p>
+</div>
+        </div>
+    </section>
+    <!--services-->
+
+   <section id="services" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5 text-uppercase fw-bold">Our Services</h2>
+        
+        <div class="row g-4 mb-4">
+            <div class="col-md-3"><div class="card h-100 p-3 shadow-sm service-card"><div class="card-body text-center"><i class="bi bi-display fs-1 text-primary mb-3"></i><h5>Web Design</h5></div></div></div>
+            <div class="col-md-3"><div class="card h-100 p-3 shadow-sm service-card"><div class="card-body text-center"><i class="bi bi-brush fs-1 text-primary mb-3"></i><h5>Branding</h5></div></div></div>
+            <div class="col-md-3"><div class="card h-100 p-3 shadow-sm service-card"><div class="card-body text-center"><i class="bi bi-share fs-1 text-primary mb-3"></i><h5>Social Media</h5></div></div></div>
+            <div class="col-md-3"><div class="card h-100 p-3 shadow-sm service-card"><div class="card-body text-center"><i class="bi bi-search fs-1 text-primary mb-3"></i><h5>SEO Optimization</h5></div></div></div>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-3"><div class="card h-100 p-3 shadow-sm service-card"><div class="card-body text-center"><i class="bi bi-pen fs-1 text-primary mb-3"></i><h5>Content Writing</h5></div></div></div>
+            <div class="col-md-3"><div class="card h-100 p-3 shadow-sm service-card"><div class="card-body text-center"><i class="bi bi-envelope-paper fs-1 text-primary mb-3"></i><h5>Email Marketing</h5></div></div></div>
+            <div class="col-md-3"><div class="card h-100 p-3 shadow-sm service-card"><div class="card-body text-center"><i class="bi bi-cart fs-1 text-primary mb-3"></i><h5>E-commerce</h5></div></div></div>
+            <div class="col-md-3"><div class="card h-100 p-3 shadow-sm service-card"><div class="card-body text-center"><i class="bi bi-cloud-check fs-1 text-primary mb-3"></i><h5>Cloud Solutions</h5></div></div></div>
+        </div>
+    </div>
+</section>
+<!--portfolio-->
+   <section id="portfolio" class="py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            
+            <div class="col-lg-6">
+                <h2 class="text-uppercase fw-bold mb-4">Why Work With Us</h2>
+                <div class="d-flex mb-4">
+                    <i class="bi bi-lightbulb fs-2 text-primary me-3"></i>
+                    <div>
+                        <h5>Innovative Strategy</h5>
+                        <p class="text-muted">We don't just follow trends; we create them to keep your brand ahead.</p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <i class="bi bi-rocket-takeoff fs-2 text-primary me-3"></i>
+                    <div>
+                        <h5>Results-Focused</h5>
+                        <p class="text-muted">Your ROI is our success. We provide clear, data-backed solutions.</p>
+                    </div>
+                </div>
+            </div>
+
+           <div class="col-lg-6">
+    <div class="card border-0 shadow-sm p-4">
+        <h4 class="text-center mb-4 text-uppercase fw-bold">Client Comment</h4>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <button type="button" data-bs-target="#testimonial" data-bs-slide-to="0"></button>
+            <button type="button" data-bs-target="#testimonial" data-bs-slide-to="1"></button>
+            <div class="carousel-inner">
+                
+                <div class="carousel-item active text-center p-3">
+                    <img src="https://i.pravatar.cc/100?u=1" class="rounded-circle mb-3" alt="Sarah J" style="width: 80px; height: 80px; object-fit: cover;">
+                    <p class="lead italic text-muted">"Creative Spark turned our vision into a digital masterpiece."</p>
+                    <footer class="blockquote-footer mt-2">Sarah J., Founder</footer>
+                </div>
+
+                <div class="carousel-item text-center p-3">
+                    <img src="https://i.pravatar.cc/100?u=2" class="rounded-circle mb-6" alt="Mark T" style="width: 80px; height: 80px; object-fit: cover;">
+                    <p class="lead italic text-muted">"The most professional team I've worked with in years."</p>
+                    <footer class="blockquote-footer mt-2">Mark T., Marketing Dir.</footer>
+                </div>
+                <a class="carousel-control-prev" href="#testimonial" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#testimonial" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--team-->
+<section id="team" class="py-5">
+       <div class="container">
+            <h2 class="fw-bold text-center mb-5">MEET THE TEAM</h2>
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6" >
+                    <div class="ratio ratio-16x9 shadow-lg rounded overflow-hidden">
+                        <iframe src="tech vidoe.mp4" title="behind scenes" alt="highlights"  allowfullscreen ></iframe><br>
+                        <p style="color: white; text-align: center; font-size: large;">Classic highlights of Creative Spark at work </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-4 text-center">
+                        <div class="col-6 team-member">
+                            <img src="IMAGE 4.jpg" class="rounded-circle team-img mb-3 shadow" alt="T1" height="150">
+                            <h5>Mugisha Ronnie</h5><p class="small text-primary">CEO</p>
+                        </div>
+                        <div class="col-6 team-member">
+                            <img src="IMAGE 3.jpg" class="rounded-circle team-img mb-3 shadow" alt="T2" height="150">
+                            <h5>Unstylo Jee</h5><p class="small text-primary">Designer</p>
+                        </div>
+                         <div class="col-6 team-member">
+                            <img src="IMAGE 1.jpg" class="rounded-circle team-img mb-3 shadow" alt="T2" height="150">
+                            <h5>Suubi Batti</h5><p class="small text-primary">Project Manager</p>
+                        </div>
+                         <div class="col-6 team-member">
+                            <img src="IMAGE 2.jpg" class="rounded-circle team-img mb-3 shadow" alt="T2" height="150">
+                            <h5>Jesus Christ</h5><p class="small text-primary">Marketing Manager</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+           
+</section>
+<!--contact-->
+    <section id="contact" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5 fw-bold text-uppercase">Contact Us</h2>
+        <div class="row g-4">
+            <div class="col-lg-5">
+                <div class="card p-4 h-100 border-0 shadow-sm">
+                    <h5>Get in touch</h5>
+                    <p class="text-muted mb-4">We'd love to hear about your project.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><i class="bi bi-geo-alt-fill text-primary me-2"></i> 10 Industrial area st,Kampala City</li>
+                        <li class="mb-3"><i class="bi bi-telephone-fill text-primary me-2"></i> +256 328666000</li>
+                        <li class="mb-3"><i class="bi bi-envelope-fill text-primary me-2"></i> bonjour@creativespark.com</li>
+                    </ul>
+                    <div class="mt-4">
+                        <h6 class="mb-3">Follow us:</h6>
+                        <a href="#" class="me-3 fs-4 text-dark"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="me-3 fs-4 text-dark"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="me-3 fs-4 text-dark"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="fs-4 text-dark"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <form class="card p-4 h-100 border-0 shadow-sm">
+                    <div class="row">
+                        <div class="col-md-6 mb-3"><input type="text" class="form-control" placeholder="Your Name"></div>
+                        <div class="col-md-6 mb-3"><input type="email" class="form-control required" placeholder="Your Email"></div>
+                    </div>
+                    <div class="mb-3"><textarea class="form-control" rows="5" placeholder="Message"></textarea></div>
+                    <button type="submit" class="btn btn-primary btn-lg w-100">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!--footer-->
+  <footer class="bg-dark text-white pt-5 pb-3">
+    <div class="container">
+        <div class="row g-4 text-center text-md-start">
+            <div class="col-md-4">
+                <h5 class="fw-bold mb-3"><img src="logo.svg" alt="Logo" height="80">Creative Spark Agency</h5>
+                <p class="text-white-50">Redefining digital experiences one pixel at a time.</p>
+            </div>
+            <div class="col-md-4">
+                <h5 class="fw-bold mb-3">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#about" class="text-white-50 text-decoration-none">About Us</a></li>
+                    <li><a href="#services" class="text-white-50 text-decoration-none">Our Services</a></li>
+                    <li><a href="#portfolio" class="text-white-50 text-decoration-none">Our Portfolio</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5 class="fw-bold mb-3">Legal</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white-50 text-decoration-none">Privacy Policy</a></li>
+                    <li><a href="#" class="text-white-50 text-decoration-none">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="border-secondary my-4">
+        <p class="text-center text-white-50 small">&copy; 2026 Creative Spark Agency. All Rights Reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
